@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="cabecalho">
+        <p id="title">calc</p>
+        <article class="escolha">
+          <p id="tema">theme</p>
+          <div class="escolhatema">
+            <label for="inTema" id="numeros"
+              ><p>1</p>
+              <p>2</p>
+              <p>3</p></label
+            >
+            <input type="range" />
+          </div>
+        </article>
+      </div>
+
+      <section class="visor">
+        <input id="visor" type="text" placeholder="0" />
+      </section>
+
+      <section class="acoes">
+        <div class="container">
+          <div class="linha1">
+            <button onclick="calculadora('valor', '7')" type="button">7</button>
+            <button onclick="calculadora('valor', '8')" type="button">8</button>
+            <button onclick="calculadora('valor', '9')" type="button">9</button>
+            <button onclick="calculadora('acao', 'del')" type="button" id="del">
+              del
+            </button>
+          </div>
+          <div class="linha2">
+            <button onclick="calculadora('valor', '4')" type="button">4</button>
+            <button onclick="calculadora('valor', '5')" type="button">5</button>
+            <button onclick="calculadora('valor', '6')" type="button">6</button>
+            <button onclick="calculadora('acao', '+')" type="button">+</button>
+          </div>
+          <div class="linha3">
+            <button onclick="calculadora('valor', '1')" type="button">1</button>
+            <button onclick="calculadora('valor', '2')" type="button">2</button>
+            <button onclick="calculadora('valor', '3')" type="button">3</button>
+            <button onclick="calculadora('acao', '-')" type="button">-</button>
+          </div>
+          <div class="linha4">
+            <button onclick="calculadora('acao', '.')" type="button">.</button>
+            <button onclick="calculadora('valor', '0')" type="button">0</button>
+            <button onclick="calculadora('acao', '/')" type="button">/</button>
+            <button onclick="calculadora('acao', '*')" type="button">X</button>
+          </div>
+          <div class="linha5">
+            <button
+              onclick="calculadora('acao', 'RESET')"
+              type="button"
+              id="reset"
+            >
+              RESET
+            </button>
+            <button onclick="calculadora('acao', '=')" type="button" id="igual">
+              =
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
